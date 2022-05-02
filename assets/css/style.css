@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#section1 {
+    background-color: rosybrown;
+    height: 100vh;
+}
+
+#section2 {
+    background-color: olivedrab;
+    height: 100vh;
+}
+
+#section3 {
+    background-color: sandybrown;
+    height: 100vh;
+}
+
+section a {
+    color: black;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+section a i {
+    animation-name: arrow;
+    font-size: 50px;
+    align-self: center;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes arrow {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(30px);
+        color: rgba(0, 0, 0, 0.2);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
